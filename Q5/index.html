@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+
+<body>
+	<div class="row">
+		<div class="container">
+			<img src = "img/img1.png" alt="oops">
+			<label> some text </label>
+		</div>
+		<div class="container">
+			<img src = "img/img2.png" alt="oops">
+			<label> some text </label>
+		</div>
+		<div class="container">
+			<img src = "img/img3.png" alt="oops">
+			<label> some text </label>
+		</div>
+		<div class="container">
+			<img src = "img/img4.png" alt="oops">
+			<label> some text </label>
+		</div>
+	</div>
+	<script>
+		var imgList = document.getElementsByTagName('img');
+		for(img of imgList) {
+			img.onmouseenter = function hoverEffects(e) {
+				e.currentTarget.parentElement.classList.add('hoveredContainer');
+			}
+		}
+		for(img of imgList) {
+			img.onmouseleave = function hoverEffects(e) {
+				e.currentTarget.parentElement.classList.remove('hoveredContainer');
+			}
+		}
+		
+	</script>
+</body>

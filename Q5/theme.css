@@ -1,0 +1,23 @@
+div {
+	display: inline-block;
+}
+input {
+	display: block;
+}
+.container {
+	height: 250px;
+	display: table-cell;
+	vertical-align: middle;
+}
+img {
+	margin: 10px;
+}
+label {
+	margin-left: 10px;
+	display: block;
+}
+.hoveredContainer {
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
